@@ -1,0 +1,95 @@
+.container-article {
+    justify-content: center; 
+    width: 100%;  
+    margin-right: auto;
+    margin-left: auto;  
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5%;
+}
+
+@media (min-width: 992px) {
+    .container-article {
+      width: calc(75% - 30px);
+      }    
+  }
+
+article{
+    font-family: Georgia, Times, serif;
+}
+
+main > .container-article {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer > .container-article {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.meta {
+    list-style-type: none;
+    text-align: center;
+    line-height: 1.8em;
+}
+
+.meta a{
+    font-size: 1.2rem;
+    font-size: bold;
+}
+
+.meta time{
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+/* Fluid images*/
+
+.img-fluid-article {
+    display: block;
+    margin: auto;
+
+}
+
+.centrado {
+    text-align: center;
+}
+
+.p-article {
+    padding-top: 2%;
+}
+
+figure {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border: 1px solid #eee;
+}
+
+.parrafo {
+    display: flex;
+    height: 25%;
+}
+
+.p-principal{
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: calc(1em + 1vw);
+    margin-bottom: 0.25em;
+    line-height: 1em;
+    
+}
+.h1-portada-article {
+    font-family: $header-font;
+    color: $accent;
+    font-size: calc(3em + 7vw);
+    margin-bottom: 0.25em;
+  }
+.p-secundario{
+    margin-right: 15px;
+    margin-left: 15px;
+    line-height: 2.3em;
+}

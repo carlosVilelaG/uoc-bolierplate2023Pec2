@@ -1,0 +1,84 @@
+.pageTwo-container {   
+    justify-content: center; 
+    width: 100%;  
+    margin-right: auto;
+    margin-left: auto;  
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5%;
+  }
+
+@media (min-width: 992px) {
+    .pageTwo-container .members-container-list {
+      width: calc(75% - 30px);
+      }
+  
+      .pageTwo-container {
+          display: flex;
+          flex-wrap: wrap;
+          }
+  }
+
+
+.h1-members {
+    font-family: $header-font;
+    color: $uoc-corporate;
+    font-size: calc(1em + 2vw);
+    margin-bottom: 0.25em;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+/*------------------------------------*\
+  #members-container-list-items
+\*------------------------------------*/
+
+.members-container-list-items {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+  }
+
+@media (min-width: 768px) and (max-width: 992px) {
+      .members-container-list-items {
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+}
+.list-item {
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.list-item-img {
+    width: 100%;
+	height: 200px;
+	object-fit: cover;
+    transition: transform 0.1s;
+    overflow: hidden;
+    margin-bottom: 10px;
+    
+}
+
+.list-item-img:hover {
+    transform: scale(1.03);
+}
+
+.list-item-title {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #home .list-items {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+
+.p-miembros , h2 {
+    text-align: center;
+    padding-bottom: 5%;
+}

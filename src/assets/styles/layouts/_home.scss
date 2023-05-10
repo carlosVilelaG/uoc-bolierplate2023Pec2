@@ -55,3 +55,63 @@ body {
   font-size: 0.75rem;
   text-align: center;
 }
+/// creado  para las opciones 
+.uoc-nav {
+  display: flex;
+  width: 40%;
+ justify-content: space-between;
+}
+
+.header {
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  text-align: right;
+  background-color: aquamarine;
+}
+
+@media (max-width: 767px) {
+  .head-logo {
+      margin-bottom: 5px;
+  }
+}
+
+/* responsive helpers*/
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+.menu-head .container , .menu-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (min-width: 576px) {
+  .container {
+      max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
+}
+
